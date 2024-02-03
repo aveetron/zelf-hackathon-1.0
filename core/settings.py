@@ -24,7 +24,9 @@ INTERNAL_APPS = ['django.contrib.admin',
 
 DJANGO_APPS = ['post']
 
-THIRD_PARTY_APPS = ['rest_framework']
+THIRD_PARTY_APPS = ['rest_framework',
+                    'django.contrib.staticfiles',  # required for serving swagger ui's css/js files
+                    'drf_yasg']
 
 INSTALLED_APPS = INTERNAL_APPS + DJANGO_APPS + THIRD_PARTY_APPS
 
